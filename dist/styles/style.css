@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1e2026;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  height: 100%;
+  align-items: center;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid rgba(29, 53, 87, 0.1);
+  background-color: #e0dbc9;
+}
+.nav__logo--heading {
+  font-size: 3.2rem;
+  color: #457b9d;
+}
+.nav__logo--heading span:nth-child(1) {
+  font-weight: 300;
+}
+.nav__logo--heading span:nth-child(2) {
+  font-weight: 500;
+  margin-left: -1rem;
+  color: #1d3557;
+}
+
+.header {
+  padding: 2rem;
+  background-image: url("../image/library.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.header__heading {
+  flex: 1;
+}
+.header__heading--title {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+}
+.header__heading--title span {
+  display: block;
+}
+.header__heading--title span:nth-child(1) {
+  background: linear-gradient(to bottom, #7098cf 10%, #5785c7 50%, #3f73bd 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__heading--title span:nth-child(2) {
+  background: linear-gradient(to bottom, #3f73bd 10%, #3664a3 50%, #2e548a 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__heading--title span:nth-child(3) {
+  background: linear-gradient(to bottom, #2e548a 10%, #254570 50%, #1d3557 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__form {
+  flex: 1;
+}
+
+.form {
+  width: 100%;
+}
+.form__group {
+  width: 100%;
+  position: relative;
+}
+.form__group:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.form__label {
+  display: block;
+  margin-bottom: 2px;
+}
+.form__input {
+  border: none;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

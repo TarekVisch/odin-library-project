@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <nav class="nav">
+          <div class="row align-center">
+            <div class="nav__logo">
+              <h2 class="nav__logo--heading">
+                <span>good</span>
+                <span>library</span>
+              </h2>
+            </div>
+          </div>
+        </nav>
+        <div class="main">
+          <header class="header">
+            <div class="row align-center">
+              <div class="header__heading">
+                <h1 class="header__heading--title">
+                  <span>A library</span>
+                  <span>for all</span>
+                  <span>Taste &amp; Age</span>
+                </h1>
+              </div>
+              <div class="header__form">
+                <form method="post" class="form">
+                  <div class="form__group">
+                    <label for="title" class="form__label">Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="author" class="form__label">Author</label>
+                    <input
+                      type="text"
+                      name="author"
+                      id="author"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="pages" class="form__label">Pages</label>
+                    <input
+                      type="text"
+                      name="pages"
+                      id="pages"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="read" class="form__label">Read</label>
+                    <input
+                      type="checkbox"
+                      name="read"
+                      id="read"
+                      class="form__checkbox"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <button type="submit">Add Book</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </header>
+          <section class="books"></section>
+        </div>
+        <footer class="footer">
+          <p>Copyright stuff</p>
+        </footer>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- A Library for all taste and age -->
