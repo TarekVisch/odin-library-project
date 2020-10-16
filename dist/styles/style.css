@@ -155,16 +155,17 @@ body {
 .books__row {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-flow: row wrap;
 }
 .books__col {
   width: 24%;
   border: 1px solid rgba(29, 53, 87, 0.7);
   border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 .books__col:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 .books__book--cover {
   width: 100%;
@@ -174,6 +175,14 @@ body {
   width: 100%;
   border-top: 1px solid rgba(29, 53, 87, 0.5);
   padding: 1rem;
+}
+.books__book--detail p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #1d3557;
+}
+.books__book--detail p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .books__book--buttons {
   padding: 0 1rem;
@@ -185,7 +194,7 @@ body {
   font-weight: 500;
   font-size: 1.5rem;
   border: none;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
 }
@@ -197,18 +206,22 @@ body {
   background-color: #a4161a;
 }
 .books__book--buttons-read {
+  margin-right: 2rem;
+  border: 2px solid #3f73bd !important;
+  background-color: transparent;
+}
+.books__book--buttons-read.active {
+  border: none !important;
   background-color: #3f73bd;
   color: #ffffff;
-}
-.books__book--buttons-read:hover {
-  background-color: #2e548a;
 }
 
 .footer {
   border-top: 1px solid rgba(29, 53, 87, 0.5);
   padding: 1.5rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
 }
 .footer__links {
