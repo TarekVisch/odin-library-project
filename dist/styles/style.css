@@ -190,7 +190,11 @@ body {
   cursor: pointer;
 }
 .books__book--buttons-delete {
-  background-color: red;
+  background-color: #ba181b;
+  color: #ffffff;
+}
+.books__book--buttons-delete:hover {
+  background-color: #a4161a;
 }
 .books__book--buttons-read {
   background-color: #3f73bd;
