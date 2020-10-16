@@ -17,6 +17,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: #1e2026;
+  background-color: #e0dbc9;
 }
 
 .app {
@@ -117,12 +118,116 @@ body {
 .form__label {
   display: block;
   margin-bottom: 2px;
+  font-weight: 500;
+  color: #1d3557;
+  font-size: 1.8rem;
 }
 .form__input {
   border: none;
   width: 100%;
   height: 3.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
   border-radius: 0.2rem;
+  border: 1px solid rgba(29, 53, 87, 0.5);
+}
+.form__submit {
+  border: none;
+  background-color: #254570;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.form__submit:hover {
+  background-color: #1d3557;
+}
+
+.books {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.books__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.books__col {
+  width: 24%;
+  border: 1px solid rgba(29, 53, 87, 0.7);
+  border-radius: 0.5rem;
+}
+.books__col:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.books__book--cover {
+  width: 100%;
+  height: 20rem;
+}
+.books__book--detail {
+  width: 100%;
+  border-top: 1px solid rgba(29, 53, 87, 0.5);
+  padding: 1rem;
+}
+.books__book--buttons {
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.books__book--buttons button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.books__book--buttons-delete {
+  background-color: red;
+}
+.books__book--buttons-read {
+  background-color: #3f73bd;
+  color: #ffffff;
+}
+.books__book--buttons-read:hover {
+  background-color: #2e548a;
+}
+
+.footer {
+  border-top: 1px solid rgba(29, 53, 87, 0.5);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__links {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.footer__link {
+  display: block;
+}
+.footer__link img {
+  width: 4rem;
+  height: 4rem;
+}
+.footer__design p {
+  font-size: 1.9rem;
+}
+.footer__design p a:link, .footer__design p a:visited {
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: 500;
+}
+.footer__design p a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
