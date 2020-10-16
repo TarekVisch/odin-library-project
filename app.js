@@ -30,6 +30,8 @@ form.addEventListener('submit', (e) => {
   } else {
     alert('Empty fields');
   }
+
+  form.reset();
 });
 
 function Book(id, title, author, pages, read, displayed) {
