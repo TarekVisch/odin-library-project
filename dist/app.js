@@ -34,13 +34,15 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
-function Book(id, title, author, pages, read, displayed) {
-  this.id = id;
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.displayed = displayed;
+class Book {
+  constructor(id, title, author, pages, read, displayed) {
+    this.id = id;
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.displayed = displayed;
+  }
 }
 
 function addBookToLibrary(book) {
